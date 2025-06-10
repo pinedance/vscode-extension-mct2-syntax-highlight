@@ -1,0 +1,210 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "MediclassicsText.v2",
+	"patterns": [
+		{
+			"include": "#headID"
+		},
+		{
+			"include": "#headMETA"
+		},
+		{
+			"include": "#headOR"
+		},
+		{
+			"include": "#headTR"
+		},
+		{
+			"include": "#headDS"
+		},
+		{
+			"include": "#bookTitles"
+		},
+		{
+			"include": "#subTitles"
+		},
+		{
+			"include": "#properNouns"
+		},
+		{
+			"include": "#brackets"
+		},
+		{
+			"include": "#punctuations"
+		},
+		{
+			"include": "#metaContent"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"headID": {
+			"patterns": [
+				{
+					"match": "^(ID)(\\t)",
+					"name": "markup.heading.mct2",
+					"captures": {
+						"1": {
+							"name": "keyword.control.mct2"
+						},
+						"2": {
+							"name": "punctuation.separator.mct2"
+						}
+					}
+				}
+			]
+		},
+		"headMETA": {
+			"patterns": [
+				{
+					"match": "^(META)(\\t)",
+					"name": "markup.heading.mct2",
+					"captures": {
+						"1": {
+							"name": "keyword.control.mct2"
+						},
+						"2": {
+							"name": "punctuation.separator.mct2"
+						}
+					}
+				}
+			]
+		},
+		"headOR": {
+			"patterns": [
+				{
+					"match": "^(OR/[A-Z]{2})(\\t)",
+					"name": "markup.heading.mct2",
+					"captures": {
+						"1": {
+							"name": "keyword.control.mct2"
+						},
+						"2": {
+							"name": "punctuation.separator.mct2"
+						}
+					}
+				}
+			]
+		},
+		"headTR": {
+			"patterns": [
+				{
+					"match": "^(TR/[A-Z]{2})(\\t)",
+					"name": "markup.heading.mct2",
+					"captures": {
+						"1": {
+							"name": "keyword.control.mct2"
+						},
+						"2": {
+							"name": "punctuation.separator.mct2"
+						}
+					}
+				}
+			]
+		},
+		"headDS": {
+			"patterns": [
+				{
+					"match": "^(DS/[A-Z]{2})(\\t)",
+					"name": "markup.heading.mct2",
+					"captures": {
+						"1": {
+							"name": "keyword.control.mct2"
+						},
+						"2": {
+							"name": "punctuation.separator.mct2"
+						}
+					}
+				}
+			]
+		},
+		"bookTitles": {
+			"patterns": [
+				{
+					"match": "<<|>>|《|》",
+					"name": "punctuation.definition.quote.mct2"
+				}
+			]
+		},
+		"subTitles": {
+			"patterns": [
+				{
+					"match": "〈|〉",
+					"name": "punctuation.definition.quote.mct2"
+				}
+			]
+		},
+		"properNouns": {
+			"patterns": [
+				{
+					"match": "「|」|『|』",
+					"name": "punctuation.definition.quote.mct2"
+				}
+			]
+		},
+		"brackets": {
+			"patterns": [
+				{
+					"match": "(\\(|\\)|\\[|\\]|\\{|\\}|（|）|［|］|｛|｝|【|】|〔|〕|《|》|〈|〉|「|」|『|』|｢|｣|｟|｠|〖|〗|〘|〙|〚|〛)",
+					"name": "punctuation.definition.bracket.mct2"
+				}
+			]
+		},
+		"punctuations": {
+			"patterns": [
+				{
+					"match": "([.,;:!?。，、；：！？]|\\.\\.+)",
+					"name": "punctuation.delimiter.mct2"
+				}
+			]
+		},
+		"metaContent": {
+			"patterns": [
+				{
+					"begin": "^META\t\\{",
+					"end": "\\}",
+					"name": "meta.embedded.block.json",
+					"patterns": [
+						{
+							"match": "\"[^\"]*\"\\s*:",
+							"name": "string.quoted.double.json"
+						},
+						{
+							"match": ":\\s*\"[^\"]*\"",
+							"name": "string.quoted.double.json"
+						}
+					]
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"match": "(//%)(.*$)",
+					"captures": {
+						"1": {
+							"name": "punctuation.definition.comment.special.head.mct2"
+						},
+						"2": {
+							"name": "comment.line.special.content.mct2"
+						}
+					}
+				},
+				{
+					"match": "(//)([^%].*$)",
+					"captures": {
+						"1": {
+							"name": "punctuation.definition.comment.normal.head.mct2"
+						},
+						"2": {
+							"name": "comment.line.normal.content.mct2"
+						}
+					}
+				}
+			]
+		}
+	},
+	"scopeName": "source.mct2"
+}

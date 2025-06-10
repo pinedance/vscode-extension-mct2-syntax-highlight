@@ -1,0 +1,59 @@
+{
+    "name": "MCT2 Theme",
+    "tokenColors": [
+        {
+            "scope": [
+                "punctuation.definition.quote.mct2",
+                "punctuation.definition.bracket.mct2"
+            ],
+            "settings": {
+                "foreground": "#569CD6"
+            }
+        },
+        {
+            "scope": "keyword.control.mct2",
+            "settings": {
+                "foreground": "#C586C0",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "string.other.mct2",
+            "settings": {
+                "foreground": "#CE9178"
+            }
+        },
+        {
+            "scope": "punctuation.delimiter.mct2",
+            "settings": {
+                "foreground": "#808080"
+            }
+        },
+        {
+            "scope": "punctuation.definition.comment.normal.head.mct2",
+            "settings": {
+                "foreground": "#505050"
+            }
+        },
+        {
+            "scope": "comment.line.normal.content.mct2",
+            "settings": {
+                "foreground": "#808080"
+            }
+        },
+        {
+            "scope": "punctuation.definition.comment.special.head.mct2",
+            "settings": {
+                "foreground": "#8B8B00",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "comment.line.special.content.mct2",
+            "settings": {
+                "foreground": "#8B8B00",
+                "fontStyle": "italic"
+            }
+        }
+    ]
+}

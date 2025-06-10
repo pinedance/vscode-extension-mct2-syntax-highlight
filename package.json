@@ -1,0 +1,44 @@
+{
+  "name": "vscode-extension-mct2-syntax-highlight",
+  "displayName": "vscode-extension-mct2-syntax-highlight",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mct2",
+        "aliases": [
+          "MediclassicsText.v2",
+          "mct2"
+        ],
+        "extensions": [
+          ".mct2"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mct2",
+        "scopeName": "source.mct2",
+        "path": "./syntaxes/mct2.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "MCT2 Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/mct2-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
