@@ -54,6 +54,15 @@
                 "foreground": "#8B8B00",
                 "fontStyle": "italic"
             }
+        },
+        {
+            "scope": [
+                "comment.line.special.up.content.mct2",
+                "comment.line.special.down.content.mct2"
+            ],
+            "settings": {
+                "foreground": "#808080"
+            }
         }
     ]
 }
