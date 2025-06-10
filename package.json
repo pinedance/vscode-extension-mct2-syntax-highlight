@@ -2,7 +2,7 @@
   "name": "vscode-extension-mct2-syntax-highlight",
   "displayName": "vscode-extension-mct2-syntax-highlight",
   "description": "",
-  "version": "0.0.1",
+  "version": "25.06.10",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -37,6 +37,10 @@
         "path": "./themes/mct2-color-theme.json"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pinedance/vscode-extension-mct2-syntax-highlight"
   },
   "devDependencies": {
     "js-yaml": "^4.1.0"

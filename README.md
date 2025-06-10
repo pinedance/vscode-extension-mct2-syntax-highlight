@@ -1,65 +1,44 @@
-# vscode-extension-mct2-syntax-highlight README
+# MCT2 Syntax Highlighting
 
-This is the README for your extension "vscode-extension-mct2-syntax-highlight". After writing up a brief description, we recommend including the following sections.
+A Visual Studio Code extension that provides syntax highlighting for MediclassicsText v2 (.mct2) files. This extension enhances the readability and editing experience of classical medical texts in the MCT2 format.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extension provides syntax highlighting for various elements in MCT2 files including:
 
-For example if there is an image subfolder under your extension project workspace:
+- Document headers and metadata sections
+- Book titles and section identifiers
+- Text structure markers
+- Content organization elements
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+The syntax highlighting helps you easily distinguish different parts of your MCT2 documents, making them more readable and easier to edit.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+No additional requirements. Just install the extension and open any `.mct2` file in Visual Studio Code.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+This extension does not add any VS Code settings at this time.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+No known issues at this time. If you find any problems, please report them on our GitHub repository.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+- Initial release
+- Basic syntax highlighting for MCT2 files
+- Support for document headers, metadata, and content structure
 
 ---
 
-## Working with Markdown
+## Working with MCT2 Files
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+The extension will automatically activate when you open any file with the `.mct2` extension. The syntax highlighting will help you identify different elements in your document structure.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+For more information about the MCT2 format and its usage, please refer to the MediclassicsText documentation.
 
 **Enjoy!**
