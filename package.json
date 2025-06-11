@@ -1,6 +1,6 @@
 {
   "name": "vscode-extension-mct2-syntax-highlight",
-  "displayName": "vscode-extension-mct2-syntax-highlight",
+  "displayName": "MediClassicsText.v2(mct2) Syntax Highlight",
   "description": "",
   "version": "25.06.10",
   "engines": {
@@ -18,7 +18,8 @@
           "mct2"
         ],
         "extensions": [
-          ".mct2"
+          ".mct2",
+          ".MCT2"
         ],
         "configuration": "./language-configuration.json"
       }
