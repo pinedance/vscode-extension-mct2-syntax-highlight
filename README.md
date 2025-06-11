@@ -1,44 +1,50 @@
 # MCT2 Syntax Highlighting
 
-A Visual Studio Code extension that provides syntax highlighting for MediclassicsText v2 (.mct2) files. This extension enhances the readability and editing experience of classical medical texts in the MCT2 format.
+이 Visual Studio Code 확장 프로그램은 MediclassicsText v2 (.mct2) 파일을 위한 구문 강조 기능을 제공합니다. 이 확장 프로그램을 통해 MCT2 형식의 고전 의학 텍스트를 더 쉽게 읽고 편집할 수 있습니다.
 
-## Features
+## 기능
 
-This extension provides syntax highlighting for various elements in MCT2 files including:
+이 확장 프로그램은 MCT2 파일의 다양한 요소에 대한 구문 강조를 제공합니다:
 
-- Document headers and metadata sections
-- Book titles and section identifiers
-- Text structure markers
-- Content organization elements
+- 문서 헤더 및 메타데이터 섹션
+- 책 제목 및 섹션 식별자
+- 텍스트 구조 표시
+- 콘텐츠 구성 요소
 
-The syntax highlighting helps you easily distinguish different parts of your MCT2 documents, making them more readable and easier to edit.
+구문 강조를 통해 MCT2 문서의 다양한 부분을 쉽게 구분할 수 있어, 가독성이 향상되고 편집이 용이해집니다.
 
-## Requirements
+## 요구사항
 
-No additional requirements. Just install the extension and open any `.mct2` file in Visual Studio Code.
+추가 요구사항이 없습니다. 확장 프로그램을 설치하고 Visual Studio Code에서 `.mct2` 파일을 열기만 하면 됩니다.
 
-## Extension Settings
+## 확장 프로그램 설치
 
-This extension does not add any VS Code settings at this time.
+[공식 배포 페이지](https://github.com/pinedance/vscode-extension-mct2-syntax-highlight/releases)에서 `.vsix` 파일을 다운로드한 후, Visual Studio Code에서 다음 단계를 따르세요:
+1. Visual Studio Code를 엽니다.
+2. 사이드바에서 확장 프로그램 아이콘을 클릭합니다.
+3. 오른쪽 상단의 점 세 개 아이콘을 클릭하고 "VSIX에서 설치..."를 선택합니다.
+4. 다운로드한 `.vsix` 파일을 선택합니다.
+5. 설치가 완료되면, MCT2 파일을 열어 구문 강조를 확인합니다.
 
-## Known Issues
+## 확장 프로그램 설정
 
-No known issues at this time. If you find any problems, please report them on our GitHub repository.
+현재 이 확장 프로그램은 VS Code 설정을 추가하지 않습니다.
 
-## Release Notes
+## 알려진 문제
+
+현재 알려진 문제가 없습니다. 문제를 발견하시면 GitHub 저장소에 보고해 주시기 바랍니다.
+
+## 릴리스 노트
 
 ### 0.0.1
 
-- Initial release
-- Basic syntax highlighting for MCT2 files
-- Support for document headers, metadata, and content structure
+- 최초 릴리스
+- MCT2 파일을 위한 기본 구문 강조
+- 문서 헤더, 메타데이터, 콘텐츠 구조 지원
+
+### 0.0.2
+
+- `{{ 삽입구문 }}` 구문 강조 추가
 
 ---
 
-## Working with MCT2 Files
-
-The extension will automatically activate when you open any file with the `.mct2` extension. The syntax highlighting will help you identify different elements in your document structure.
-
-For more information about the MCT2 format and its usage, please refer to the MediclassicsText documentation.
-
-**Enjoy!**
