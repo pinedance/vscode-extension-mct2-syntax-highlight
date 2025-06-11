@@ -37,7 +37,14 @@
         "uiTheme": "vs-dark",
         "path": "./themes/mct2-color-theme.json"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "[mct2]": {
+        "editor.renderWhitespace": "boundary",
+        "editor.renderControlCharacters": true,
+        "editor.guides.indentation": true
+      }
+    }
   },
   "repository": {
     "type": "git",
