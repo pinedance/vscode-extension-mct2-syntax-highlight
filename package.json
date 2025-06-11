@@ -36,7 +36,14 @@
         "uiTheme": "vs-dark",
         "path": "./themes/mct2-color-theme.json"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "[mct2]": {
+        "editor.renderWhitespace": "boundary",
+        "editor.renderControlCharacters": true,
+        "editor.guides.indentation": true
+      }
+    }
   },
   "devDependencies": {
     "js-yaml": "^4.1.0"
