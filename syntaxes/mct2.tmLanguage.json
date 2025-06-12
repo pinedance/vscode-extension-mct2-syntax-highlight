@@ -126,16 +126,19 @@
 		"insertions": {
 			"patterns": [
 				{
-					"match": "(\\{\\{)([^\\}]*)(\\}\\})",
+					"match": "(\\{\\{)([a-zA-Z\\+]+?/)?([^\\}]*)(\\}\\})",
 					"captures": {
 						"1": {
-							"name": "punctuation.definition.annotation.begin.mct2"
+							"name": "punctuation.definition.insertion.begin.mct2"
 						},
 						"2": {
-							"name": "meta.annotation.identifier.mct2"
+							"name": "entity.name.tag.insertion.type.mct2"
 						},
 						"3": {
-							"name": "punctuation.definition.annotation.end.mct2"
+							"name": "string.other.insertion.content.mct2"
+						},
+						"4": {
+							"name": "punctuation.definition.insertion.end.mct2"
 						}
 					}
 				}
