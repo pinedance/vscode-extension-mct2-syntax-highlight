@@ -1,65 +1,53 @@
-# vscode-extension-mct2-syntax-highlight README
+# MCT2 Syntax Highlighting
 
-This is the README for your extension "vscode-extension-mct2-syntax-highlight". After writing up a brief description, we recommend including the following sections.
+이 Visual Studio Code 확장 프로그램은 MediclassicsText v2 (.mct2) 파일을 위한 구문 강조 기능을 제공합니다. 이 확장 프로그램을 통해 MCT2 형식의 고전 의학 텍스트를 더 쉽게 읽고 편집할 수 있습니다.
 
-## Features
+## 기능
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+이 확장 프로그램은 MCT2 파일의 다양한 요소에 대한 구문 강조를 제공합니다:
 
-For example if there is an image subfolder under your extension project workspace:
+- 문서 헤더 및 메타데이터 섹션
+- 책 제목 및 섹션 식별자
+- 텍스트 구조 표시
+- 콘텐츠 구성 요소
 
-\!\[feature X\]\(images/feature-x.png\)
+구문 강조를 통해 MCT2 문서의 다양한 부분을 쉽게 구분할 수 있어, 가독성이 향상되고 편집이 용이해집니다.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## 요구사항
 
-## Requirements
+추가 요구사항이 없습니다. 확장 프로그램을 설치하고 Visual Studio Code에서 `.mct2` 파일을 열기만 하면 됩니다.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## 확장 프로그램 설치
 
-## Extension Settings
+[공식 배포 페이지](https://github.com/pinedance/vscode-extension-mct2-syntax-highlight/releases)에서 `.vsix` 파일을 다운로드한 후, Visual Studio Code에서 다음 단계를 따르세요:
+1. Visual Studio Code를 엽니다.
+2. 사이드바에서 확장 프로그램 아이콘을 클릭합니다.
+3. 오른쪽 상단의 점 세 개 아이콘을 클릭하고 "VSIX에서 설치..."를 선택합니다.
+4. 다운로드한 `.vsix` 파일을 선택합니다.
+5. 설치가 완료되면, MCT2 파일을 열어 구문 강조를 확인합니다.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## 확장 프로그램 설정
 
-For example:
+현재 이 확장 프로그램은 VS Code 설정을 추가하지 않습니다.
 
-This extension contributes the following settings:
+## 알려진 문제
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+현재 알려진 문제가 없습니다. 문제를 발견하시면 GitHub 저장소에 보고해 주시기 바랍니다.
 
-## Known Issues
+## 릴리스 노트
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+### 0.0.1
 
-## Release Notes
+- 최초 릴리스
+- MCT2 파일을 위한 기본 구문 강조
+- 문서 헤더, 메타데이터, 콘텐츠 구조 지원
 
-Users appreciate release notes as you update your extension.
+### 0.0.2
 
-### 1.0.0
+- `{{ 삽입구문 }}` 구문 강조 추가
 
-Initial release of ...
+### 0.0.3
 
-### 1.0.1
+- `{{ 삽입구문 }}` 구문 강조 수정: `☆` 기호 강조
+- `|`가 포함된 table 구문 강조 추가
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

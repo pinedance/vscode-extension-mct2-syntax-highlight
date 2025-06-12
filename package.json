@@ -2,7 +2,7 @@
   "name": "vscode-extension-mct2-syntax-highlight",
   "displayName": "vscode-extension-mct2-syntax-highlight",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -26,7 +26,7 @@
     "grammars": [
       {
         "language": "mct2",
-        "scopeName": "source.mct2",
+        "scopeName": "text.mct2",
         "path": "./syntaxes/mct2.tmLanguage.json"
       }
     ],
