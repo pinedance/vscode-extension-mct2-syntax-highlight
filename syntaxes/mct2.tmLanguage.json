@@ -40,6 +40,9 @@
 		},
 		{
 			"include": "#comments"
+		},
+		{
+			"include": "#tableContent"
 		}
 	],
 	"repository": {
@@ -126,18 +129,34 @@
 		"insertions": {
 			"patterns": [
 				{
-					"match": "(\\{\\{)([^\\}]*)(\\}\\})",
-					"captures": {
+					"begin": "(\\{\\{)([a-zA-Z\\+]+/)?",
+					"end": "(\\}\\})",
+					"beginCaptures": {
 						"1": {
-							"name": "punctuation.definition.annotation.begin.mct2"
+							"name": "punctuation.definition.insertion.begin.mct2"
 						},
 						"2": {
-							"name": "meta.annotation.identifier.mct2"
-						},
-						"3": {
-							"name": "punctuation.definition.annotation.end.mct2"
+							"name": "entity.name.tag.insertion.type.mct2"
 						}
-					}
+					},
+					"endCaptures": {
+						"1": {
+							"name": "punctuation.definition.insertion.end.mct2"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#insertions"
+						},
+						{
+							"match": "([☆@;=\\*\\:])",
+							"name": "punctuation.separator.content.mct2"
+						},
+						{
+							"match": "[^☆@;=\\*\\:\\{\\}]+",
+							"name": "string.other.insertion.content.mct2"
+						}
+					]
 				}
 			]
 		},
@@ -177,7 +196,7 @@
 			"patterns": [
 				{
 					"match": "([.,;:!?。，、；：！？]|\\.\\.+)",
-					"name": "punctuation.delimiter.mct2"
+					"name": "punctuation.delimiter.general.mct2"
 				}
 			]
 		},
@@ -186,15 +205,15 @@
 				{
 					"begin": "^META\t\\{",
 					"end": "\\}",
-					"name": "meta.embedded.block.json",
+					"name": "meta.embedded.json.mct2",
 					"patterns": [
 						{
 							"match": "\"[^\"]*\"\\s*:",
-							"name": "string.quoted.double.json"
+							"name": "string.content.key.mct2"
 						},
 						{
 							"match": ":\\s*\"[^\"]*\"",
-							"name": "string.quoted.double.json"
+							"name": "string.content.value.mct2"
 						}
 					]
 				}
@@ -258,7 +277,35 @@
 					}
 				}
 			]
+		},
+		"tableContent": {
+			"patterns": [
+				{
+					"match": "(\\|[^\\n]*)$",
+					"name": "markup.content.table.mct2",
+					"captures": {
+						"1": {
+							"patterns": [
+								{
+									"include": "#tableDelimiter"
+								},
+								{
+									"include": "#insertions"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"tableDelimiter": {
+			"patterns": [
+				{
+					"match": "\\|",
+					"name": "punctuation.delimiter.table.mct2"
+				}
+			]
 		}
 	},
-	"scopeName": "source.mct2"
+	"scopeName": "text.mct2"
 }
