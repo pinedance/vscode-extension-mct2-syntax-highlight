@@ -31,13 +31,6 @@
         "path": "./syntaxes/mct2.tmLanguage.json"
       }
     ],
-    "themes": [
-      {
-        "label": "MCT2 Theme",
-        "uiTheme": "vs-dark",
-        "path": "./themes/mct2-color-theme.json"
-      }
-    ],
     "configurationDefaults": {
       "[mct2]": {
         "editor.renderWhitespace": "boundary",
