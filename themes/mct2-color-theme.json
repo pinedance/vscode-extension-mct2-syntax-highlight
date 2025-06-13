@@ -1,5 +1,6 @@
 {
     "name": "MCT2 Theme",
+    "include": "./dark_modern.json",
     "tokenColors": [
         {
             "scope": [
