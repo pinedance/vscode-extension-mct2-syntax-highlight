@@ -51,3 +51,7 @@
 - `{{ 삽입구문 }}` 구문 강조 수정: `☆` 기호 강조
 - `|`가 포함된 table 구문 강조 추가
 
+### 0.0.4
+
+- custom color theme 적용 삭제
+- text mate scope 이름 변경

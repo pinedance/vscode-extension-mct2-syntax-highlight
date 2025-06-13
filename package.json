@@ -2,7 +2,7 @@
   "name": "vscode-extension-mct2-syntax-highlight",
   "displayName": "MediClassicsText.v2(mct2) Syntax Highlight",
   "description": "",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.54.0"
   },
