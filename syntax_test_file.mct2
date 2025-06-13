@@ -1,0 +1,183 @@
+// 서문부터 시작하는 경우
+ID	sjkjklja92jkenj
+META	{ TAG: h2, CLASS: intro }
+OR/HZ	東醫寶鑑序
+TR/KO	동의보감 서문
+TR/EN	Preface
+
+// 이미지글자
+ID	sjkjklja92jkenj
+META	{ TAG: p }
+OR/HZ	醫者雅言軒岐, {{chr/A001_243.png}}軒岐上窮天紀, 下極人理, 
+TR/KO	의사들은 항상 헌원(軒轅)과 기백(岐伯)을 말합니다. 헌원과 기백
+TR/EN	Those of the medical profession often mention Huangdi a
+
+// 파자
+ID	sjkjklja92jkenj
+META	{ TAG: h2, CLASS: intro }
+OR/HZ	身形藏{{chr/广+付}}圖
+TR/KO	신형장부도
+TR/EN	Picture of the overall body, viscera, and bowels
+
+// 삽화
+ID	sjkjklja92jkenj
+META	{TAG: img, CLASS: [center, thumbnail], SRC: image012.png, ALT: True }
+OR/HZ	泥丸宮, 髓海腦, 玉枕關, 轆轤關, 尾閭關, 喉, 咽, 肺, 心, 膈, 膜, 脾, 胃, 肝, 腎, 膽, 小腸, 大腸, 臍, 膀胱, 穀道, 水道
+TR/KO	니환궁, 수해뇌, 옥침관, 녹로관, 미려관, 후, 인, 폐, 심, 격, 막, 비, 위, 간, 신, 담, 소장, 대장, 제, 방광, 곡도, 수도
+TR/EN	blabla..
+
+// 삽화의 내용
+ID	sjkjklja92jkenj
+META	{ TAG: p, CLASS: image-p }
+OR/HZ	身形藏府圖는 어쩌구저쩌구
+TR/KO	신형장부도는 어쩌구저쩌구
+TR/EN	Picture of the overall body, viscera, and bowels는 어쩌구저쩌구
+
+// 저본에 있는 주해 등등
+ID	sjkjklja92jkenj
+META	{ TAG: p, CLASS: traditional-comment }
+OR/HZ	〔李注〕身形藏府圖는 어쩌구저쩌구
+TR/KO	〔이시진〕신형장부도는 어쩌구저쩌구
+TR/EN	〔Lee〕Picture of the overall body, viscera, and bowels는 어쩌구저쩌구
+
+// 저본에 없는 현대인의 해설 등등
+ID	sjkjklja92jkenj
+META	{ TAG: p, CLASS: modern-comment }
+DS/ZH	〔柳注〕身形藏府圖는 어쩌구저쩌구
+DS/KO	〔유장화〕신형장부도는 어쩌구저쩌구
+DS/EN	〔Liu〕Picture of the overall body, viscera, and bowels는 어쩌구저쩌구
+
+// 글자 스타일, 주석은 가능한 단어나 구 단위로, 영문에 태그
+ID	sjkjklja92jkenj
+META	{ TAG: p, CLASS: indent1 }
+OR/HZ	孫眞人曰, 天地之內, {{sm/以人爲貴}}, 頭圓象天, {{ps/足方象地}}, 天有四時, {{ng/人有四肢}}, 天有五行, {{lg/人有五藏}}, 天有六極, 人有六府, 天有八風, 人有八節, {{sm/天有{{ps/九星}}, 人有九竅}}, 天有十二時, 人有十二經脉, 天有二十四氣, 人有二十四兪, 天有三百六十五度, 人有{{三=*四@다른 데;二@또 다른 데}}百六十五骨節, 天有日月, {{ng/人有眼目, {{sm/天有}}晝夜}}, 人有寤寐, 天有雷電, 人有喜怒, 天有雨露, 人有涕泣, 天有陰陽, {{人有寒熱=*人寒熱@여기}}, {{地有泉水=*地四有泉水@다른 데}}, 人有血脉, 地有草木, 人有毛髮, 地有金石, 人有牙齒, 皆稟四大五常, 假合成形.
+TR/KO	손진인이, "천지에서 존재하는 것 {{sm/가운데}} 사람이 가장 귀중하다. 둥근 머리는 하늘을 닮았고 네모난 발은 땅을 닮았다. 하늘에 사시가 있듯이 사람에게는 사지가 있고, 하늘에 오행이 있듯이 사람에게는 오장이 있다. 하늘에 육극(六極)이 있듯이 사람에게는 육부가 있고, 하늘에 팔풍(八風)이 있듯이 사람에게는 팔절(八節)이 있다.{{없기도 하다.}} 하늘에 구성(九星)이 있듯이 사람에게는 구규(九竅)가 있고, 하늘에 십이시(十二時)가 있듯이 사람에게는 십이경맥{{십이경맥:다른 데는 10경맥}}이 있다. 하늘에 이십사기(二十四氣)가 있듯이 
+TR/EN	There is a saying by <i>Sun Zhenren (孫眞人)</i>, "Mankind is the most precious of all living things in the universe. The round head resembles heaven, and the flat foot resembles earth; man has four limbs as the 
+
+// 중간 AA 시작 가능
+ID	sjkjklja92jkenj
+META	{ TAG: h1 }
+OR/HZ	內景篇卷之一
+TR/KO	내경편 권1
+TR/EN	Internal Bodily Elements, Volume 1
+
+// XX
+ID	sjkjklja92jkenj
+META	{ TAG: p, CLASS: [description, center] }
+OR/HZ	御醫 忠勤貞亮扈聖功臣 崇祿大夫 陽平君 {{sm/臣}} 許浚奉敎撰
+TR/KO	어의 충근정량호성공신 숭록대부 양평군 허준이 하교를 받들어 짓습니다.
+TR/EN	Written by the order of the King, by Court Physician, Diligently Loyal Vassal of Merit, Grand Master for Esteemed Merit, Lord Yangpyung, Heo Jun
+
+// [ip/ ]
+ID	sjkjklja92jkenj
+META	{ TAG: h2, CLASS: temp-title }
+OR/HZ	身形
+TR/KO	신형
+TR/EN	Body
+
+// include (반복으로 사용하거나 한줄로 작성하기 어려운 데이터를 바꿔 넣는 문법)
+ID	sjkjklja92jkenj
+META	{ TAG: h3 }
+OR/HZ	形氣之始
+TR/KO	형기{{include/abc.yaml?id=12}}의 시작
+TR/EN	The Beginning of Form and Qi
+- id: 12
+text: 형기 : 형기는 감빵에 머물러야 하는 기간이다.
+
+
+
+// 줄바꿈
+ID	sjkjklja92jkenj
+META	{ TAG: p }
+OR/HZ	乾鑿度云, 天形出乎乾, {{n}}有太易太初太始太素. 
+TR/KO	《건착도》에, "하늘[天]의 형(形)은 {{n}}건(乾)에서 나오니, 
+TR/EN	In the <i>Book of Changes Heavenly-Qian Chisel Measurement</i> (乾鑿度), it is said: "The specific image of heaven {{n}}comes from geon (乾), which can be classified into th
+
+// 처방
+ID	sjkjklja92jkenj
+META	{ TAG: p, CLASS: formula-title }
+OR/HZ	枳朮丸
+TR/KO	지출환
+TR/EN	Bitter Orange and Atractylodes Pill
+// 처방 제목[formula-title]과 설명 [formula-p]
+// 본초 제목[herb, title]과 설명[herb, desc]
+// 경혈 제목[acupoint, title]과 설명[acupoint, desc]
+
+
+
+// 약속기호 : 권점, 공백, 포제, 가운뎃점, 서명, 쉼표, 마침표, 콜론, 느낌표, 신출자......
+ID	sjkjklja92jkenj
+META	{ TAG: p, CLASS: [formula-p, indent3] }
+OR/HZ	白芍藥((酒炒))␣二錢, 當歸ㆍ人參ㆍ白朮ㆍ黃芪((蜜炒))ㆍ肉桂ㆍ陳皮ㆍ甘草((灸))␣各一錢, 熟地黃ㆍ五味子ㆍ防風␣各七分半, 遠志␣五分. 右剉, 作一貼, 薑三棗二, 水煎服. ○블라블라
+TR/KO	백작약((술에 축여 볶는다)) 2돈, 당귀ㆍ인삼ㆍ백출ㆍ황기((꿀에 축여 볶는다))ㆍ육계ㆍ진피ㆍ감초((굽는다)) 각 1돈, 숙지황ㆍ오미자ㆍ방풍 각 7.5푼, 원지 5푼. 이 약들을 썰어 1첩으로 하여 생강 3쪽, 대추 2개를 넣어 물에 달여 먹는다. ○블라블라
+TR/EN	Treats stuffiness in the pit of the stomach, digests food, and makes the stomach healthy. Use 2 nyangs of <i>Atractylodis Rhizoma Alba 白朮</i> and 1 nyang of <i>Ponciri Fructus Immaturus 枳實</i> ((fried with bran)). Grind these into powder, mix with rice made with lotus leaf wrapping, and make pills in the size of a seed of a foxglove tree. Take 50-70 to 100 pills with boiled water. ○블라블라
+내어쓰기 : indent0
+
+
+ID	sjkjklja92jkenj
+META	{ TAG: h3 }
+OR/HZ	立春節
+TR/KO	입춘절
+TR/EN	Onset of Spring
+
+// 주석서의 표기 (편주의학입문, 상한론주해 등등) : 같은 라인에 소자쌍행을 처리된 경우
+ID	sjkjklja92jkenj
+META	{ TAG: p }
+OR/HZ	惡心欲吐不得吐, 一見飮食心便惡; {{sm+an/二陳湯加白豆蔲ㆍ香附ㆍ砂仁.}}
+TR/KO	속이 메슥거리는 건 토하고자 하나 토하지 못하는 것으로, 음식을 보면 속이 곧바로 메슥거린다.{{ann/이진탕에 ☆백두구, 향부자, 사인을 더한다.}}
+
+// 표, include
+ID	sjkjklja92jkenj
+META	{ TAG: table, CLASS: [header-top, header-left] }
+OR/HZ	|一日|十日|十九日|二十八日|三十七日|忌左脚足|{{n}}|二日|十一日|二十日|二十九日|三十八日|忌頭首喉膺|{{n}}|三日|十二日|二十一日|三十日|三十九日|忌腰尻下竅|
+TR/KO	{{include/abc.yaml?id=13}}
+TR/EN	{{include/abc.yaml?id=14}}
+// - id: 13
+// text: |-
+// |1일|10일|19일|28일|37일|왼쪽 다리와 발을 조심한다.|
+// |2일|11일|20일|29일|38일|머리ㆍ목구멍ㆍ가슴을 조심한다.|
+// |3일|12일|21일|30일|39일|허리ㆍ꽁무니ㆍ전음ㆍ후음을 조심한다.|
+// - id: 14
+// text: <table><thead><tr><th>1st day</th><th>10th day</th><th>19th day</th><th>28th day</th><th>37th day</th><th>Be careful with the left leg and foot.</th></tr></thead><tbody><tr><td>2nd day</td><td>11th day</td><td>20th day</td></tr></tbody></table>
+
+
+
+ID	sjkjklja92jkenj
+META	{ TAG: h1 }
+OR/HZ	雜病篇卷之四
+TR/KO	잡병편 권4
+TR/EN	Miscellaneous Disorder, Volume 4
+
+ID	sjkjklja92jkenj
+META	{ TAG: h2 }
+OR/HZ	內傷
+TR/KO	내상(內傷)
+TR/EN	Internal Damage
+
+ID	sjkjklja92jkenj
+META	{ TAG: h3 }
+OR/HZ	食藥療病
+TR/KO	음식과 약으로 병을 치료한다
+TR/EN	Treating the Disease with Food and Medicine
+
+ID	sjkjklja92jkenj
+META	{ TAG: p }
+OR/HZ	安身之本, 必須於食, 救疾之道, 惟在於藥. 不知食宜者, 
+TR/KO	몸을 편안히 하는 근본은 음식에 달려 있고, 질병을 치료
+TR/EN	The key-point of a comfortable physical state lies with food, 
+
+// 발문
+ID	sjkjklja92jkenj
+META	{ TAG: h2, CLASS: intro }
+OR/HZ	東醫寶鑑序
+TR/KO	동의보감 발문
+TR/EN	Preface
+
+ID	sjkjklja92jkenj
+META	{ TAG: p }
+OR/HZ	極人理, 宜不屑乎記述, 而猶且說問著難, 
+TR/KO	의사들은 항상 헌원(軒轅)과 기백(岐伯)을 말합니다. 
+TR/EN	Those of the medical profession often mention 
+
+
+
