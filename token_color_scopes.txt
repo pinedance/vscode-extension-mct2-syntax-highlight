@@ -1,0 +1,151 @@
+# TextMate Token Color Scopes from VS Code Dark Themes
+
+## Meta Scopes
+- meta.embedded
+- meta.embedded.assembly
+- meta.preprocessor.string
+- meta.preprocessor.numeric
+- meta.structure.dictionary.key.python
+- meta.diff.header
+- meta.template.expression
+- meta.type.cast.expr
+- meta.type.new.expr
+- meta.object-literal.key
+
+## Entity Scopes
+- entity.name.function
+- entity.name.tag
+- entity.name.tag.less
+- entity.name.operator
+- entity.name.label
+- entity.name.operator.custom-literal
+- entity.other.attribute-name
+- entity.other.attribute-name.scss
+- entity.other.inherited-class
+
+## Storage Scopes
+- storage
+- storage.type
+- storage.modifier.package.java
+- storage.type.numeric.go
+- storage.type.byte.go
+- storage.type.boolean.go
+- storage.type.string.go
+- storage.type.uintptr.go
+- storage.type.error.go
+- storage.type.rune.go
+- storage.type.cs
+- storage.type.generic.cs
+- storage.type.modifier.cs
+- storage.type.variable.cs
+- storage.type.annotation.java
+- storage.type.generic.java
+- storage.type.java
+- storage.type.object.array.java
+- storage.type.primitive.array.java
+- storage.type.primitive.java
+- storage.type.token.java
+- storage.type.groovy
+- storage.type.annotation.groovy
+- storage.type.parameters.groovy
+- storage.type.generic.groovy
+- storage.type.object.array.groovy
+- storage.type.primitive.array.groovy
+- storage.type.primitive.groovy
+
+## Variable Scopes
+- variable
+- variable.language
+- variable.legacy.builtin.python
+- variable.other.constant
+- variable.other.enummember
+- variable.other.member
+
+## Support Scopes
+- support.class
+- support.type
+- support.function
+- support.constant.handlebars
+- support.constant.property-value
+- support.constant.font-name
+- support.constant.media-type
+- support.constant.media
+- support.constant.math
+- support.constant.dom
+- support.constant.json
+- support.constant.color
+- support.function.git-rebase
+- support.other.parenthesis.regexp
+
+## Keyword Scopes
+- keyword
+- keyword.control
+- keyword.control.anchor.regexp
+- keyword.operator
+- keyword.operator.wordlike
+- keyword.operator.noexcept
+- keyword.operator.quantifier.regexp
+- keyword.operator.or.regexp
+- keyword.operator.negation.regexp
+- keyword.other.unit
+- keyword.operator.minus.exponent
+
+## Constant Scopes
+- constant.language
+- constant.regexp
+- constant.character
+- constant.character.escape
+- constant.character.character-class.regexp
+- constant.character.set.regexp
+- constant.other.option
+- constant.other.color.rgb-value
+- constant.other.rgb-value
+- constant.other.character-class.set.regexp
+- constant.other.character-class.regexp
+- constant.sha.git-rebase
+
+## String & Source Scopes
+- string.tag
+- string.value
+- string.regexp
+- source.coffee.embedded
+- source.groovy.embedded
+- source.cpp
+- source.powershell
+
+## Markup Scopes
+- markup.underline
+- markup.bold
+- markup.heading
+- markup.italic
+- markup.strikethrough
+- markup.inserted
+- markup.deleted
+- markup.changed
+- markup.inline.raw
+
+## Punctuation Scopes
+- punctuation.definition.tag
+- punctuation.definition.quote.begin.markdown
+- punctuation.definition.list.begin.markdown
+- punctuation.definition.group.regexp
+- punctuation.definition.group.assertion.regexp
+- punctuation.definition.character-class.regexp
+- punctuation.character.set.begin.regexp
+- punctuation.character.set.end.regexp
+- punctuation.section.embedded
+- punctuation.section.embedded.end.php
+- punctuation.separator.namespace.ruby
+
+## Comment Scopes
+- comment
+
+## Invalid Scopes
+- invalid
+
+## Header Scopes
+- header
+
+## Emphasis Scopes
+- emphasis
+- strong

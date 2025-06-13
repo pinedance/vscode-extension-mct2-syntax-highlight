@@ -50,13 +50,13 @@
 			"patterns": [
 				{
 					"match": "^(ID)(\\t)",
-					"name": "markup.heading.mct2",
+					"name": "keyword",
 					"captures": {
 						"1": {
-							"name": "keyword.control.head.id.mct2"
+							"name": "keyword.control"
 						},
 						"2": {
-							"name": "punctuation.separator.mct2"
+							"name": "keyword.operator.wordlike"
 						}
 					}
 				}
@@ -66,13 +66,13 @@
 			"patterns": [
 				{
 					"match": "^(META)(\\t)",
-					"name": "markup.heading.mct2",
+					"name": "keyword",
 					"captures": {
 						"1": {
-							"name": "keyword.control.head.meta.mct2"
+							"name": "keyword.control"
 						},
 						"2": {
-							"name": "punctuation.separator.mct2"
+							"name": "keyword.operator.wordlike"
 						}
 					}
 				}
@@ -82,13 +82,13 @@
 			"patterns": [
 				{
 					"match": "^(OR/[A-Z]{2})(\\t)",
-					"name": "markup.heading.mct2",
+					"name": "keyword",
 					"captures": {
 						"1": {
-							"name": "keyword.control.head.org.mct2"
+							"name": "support.constant.font-name"
 						},
 						"2": {
-							"name": "punctuation.separator.mct2"
+							"name": "keyword.operator.wordlike"
 						}
 					}
 				}
@@ -98,13 +98,13 @@
 			"patterns": [
 				{
 					"match": "^(TR/[A-Z]{2})(\\t)",
-					"name": "markup.heading.mct2",
+					"name": "keyword",
 					"captures": {
 						"1": {
-							"name": "keyword.control.head.trs.mct2"
+							"name": "constant.language"
 						},
 						"2": {
-							"name": "punctuation.separator.mct2"
+							"name": "keyword.operator.wordlike"
 						}
 					}
 				}
@@ -114,13 +114,13 @@
 			"patterns": [
 				{
 					"match": "^(DS/[A-Z]{2})(\\t)",
-					"name": "markup.heading.mct2",
+					"name": "keyword",
 					"captures": {
 						"1": {
-							"name": "keyword.control.head.desc.mct2"
+							"name": "constant.regexp"
 						},
 						"2": {
-							"name": "punctuation.separator.mct2"
+							"name": "keyword.operator.wordlike"
 						}
 					}
 				}
@@ -133,15 +133,15 @@
 					"end": "(\\}\\})",
 					"beginCaptures": {
 						"1": {
-							"name": "punctuation.definition.insertion.begin.mct2"
+							"name": "punctuation.character.set.begin.regexp"
 						},
 						"2": {
-							"name": "entity.name.tag.insertion.type.mct2"
+							"name": "entity.name.tag"
 						}
 					},
 					"endCaptures": {
 						"1": {
-							"name": "punctuation.definition.insertion.end.mct2"
+							"name": "punctuation.character.set.end.regexp"
 						}
 					},
 					"patterns": [
@@ -150,11 +150,11 @@
 						},
 						{
 							"match": "([☆@;=\\*\\:])",
-							"name": "punctuation.separator.content.mct2"
+							"name": "keyword.operator"
 						},
 						{
 							"match": "[^☆@;=\\*\\:\\{\\}]+",
-							"name": "string.other.insertion.content.mct2"
+							"name": "string.regexp"
 						}
 					]
 				}
@@ -164,7 +164,7 @@
 			"patterns": [
 				{
 					"match": "<<|>>|《|》",
-					"name": "punctuation.definition.quote.mct2"
+					"name": "punctuation.definition.group.assertion.regexp"
 				}
 			]
 		},
@@ -172,7 +172,7 @@
 			"patterns": [
 				{
 					"match": "〈|〉",
-					"name": "punctuation.definition.quote.mct2"
+					"name": "punctuation.definition.group.assertion.regexp"
 				}
 			]
 		},
@@ -180,7 +180,7 @@
 			"patterns": [
 				{
 					"match": "「|」|『|』",
-					"name": "punctuation.definition.quote.mct2"
+					"name": "punctuation.definition.group.assertion.regexp"
 				}
 			]
 		},
@@ -188,7 +188,7 @@
 			"patterns": [
 				{
 					"match": "(\\(|\\)|\\[|\\]|\\{|\\}|（|）|［|］|｛|｝|【|】|〔|〕|｢|｣|｟|｠|〖|〗|〘|〙|〚|〛)",
-					"name": "punctuation.definition.bracket.mct2"
+					"name": "punctuation.definition.group.regexp"
 				}
 			]
 		},
@@ -196,7 +196,7 @@
 			"patterns": [
 				{
 					"match": "([.,;:!?。，、；：！？]|\\.\\.+)",
-					"name": "punctuation.delimiter.general.mct2"
+					"name": "punctuation.definition.tag"
 				}
 			]
 		},
@@ -205,15 +205,15 @@
 				{
 					"begin": "^META\t\\{",
 					"end": "\\}",
-					"name": "meta.embedded.json.mct2",
+					"name": "meta.embedded",
 					"patterns": [
 						{
 							"match": "\"[^\"]*\"\\s*:",
-							"name": "string.content.key.mct2"
+							"name": "string.tag"
 						},
 						{
 							"match": ":\\s*\"[^\"]*\"",
-							"name": "string.content.value.mct2"
+							"name": "string.value"
 						}
 					]
 				}
@@ -225,10 +225,10 @@
 					"match": "(^//%#)(.*$)",
 					"captures": {
 						"1": {
-							"name": "punctuation.definition.comment.special.head.mct2"
+							"name": "support.type"
 						},
 						"2": {
-							"name": "comment.line.special.content.mct2"
+							"name": "support.function"
 						}
 					}
 				},
@@ -236,10 +236,10 @@
 					"match": "(^//%↑)(.*$)",
 					"captures": {
 						"1": {
-							"name": "punctuation.definition.comment.special.head.mct2"
+							"name": "support.class"
 						},
 						"2": {
-							"name": "comment.line.special.up.content.mct2"
+							"name": "comment"
 						}
 					}
 				},
@@ -247,10 +247,10 @@
 					"match": "(^//%↓)(.*$)",
 					"captures": {
 						"1": {
-							"name": "punctuation.definition.comment.special.head.mct2"
+							"name": "support.class"
 						},
 						"2": {
-							"name": "comment.line.special.down.content.mct2"
+							"name": "comment"
 						}
 					}
 				},
@@ -258,10 +258,10 @@
 					"match": "(^//%[^#↑↓])(.*$)",
 					"captures": {
 						"1": {
-							"name": "punctuation.definition.comment.special.head.mct2"
+							"name": "support.type"
 						},
 						"2": {
-							"name": "comment.line.special.content.mct2"
+							"name": "comment"
 						}
 					}
 				},
@@ -269,10 +269,10 @@
 					"match": "(//)([^%].*$)",
 					"captures": {
 						"1": {
-							"name": "punctuation.definition.comment.normal.head.mct2"
+							"name": "comment"
 						},
 						"2": {
-							"name": "comment.line.normal.content.mct2"
+							"name": "comment"
 						}
 					}
 				}
@@ -282,7 +282,7 @@
 			"patterns": [
 				{
 					"match": "(\\|[^\\n]*)$",
-					"name": "markup.content.table.mct2",
+					"name": "meta.template.expression",
 					"captures": {
 						"1": {
 							"patterns": [
@@ -302,7 +302,7 @@
 			"patterns": [
 				{
 					"match": "\\|",
-					"name": "punctuation.delimiter.table.mct2"
+					"name": "punctuation.definition.character-class.regexp"
 				}
 			]
 		}
