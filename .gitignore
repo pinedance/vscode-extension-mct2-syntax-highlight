@@ -1,9 +1,14 @@
+# CUSTOM
 _*.*
-.vscode/
 
+# DEV
+.agents/
 node_modules
-*.vsix
 .env
+*.vsix
+
+# IDE
+.vscode/
 
 ### 맥 ###
 .DS_Store
