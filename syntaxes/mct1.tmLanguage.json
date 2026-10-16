@@ -1,0 +1,197 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "MediclassicsText.v1",
+	"patterns": [
+		{
+			"include": "#paragraphTags"
+		},
+		{
+			"include": "#styleTags"
+		},
+		{
+			"include": "#annotationTags"
+		},
+		{
+			"include": "#pictureContent"
+		},
+		{
+			"include": "#tableDelimiter"
+		},
+		{
+			"include": "text.mct2#bookTitles"
+		},
+		{
+			"include": "text.mct2#subTitles"
+		},
+		{
+			"include": "text.mct2#properNouns"
+		},
+		{
+			"include": "text.mct2#brackets"
+		},
+		{
+			"include": "text.mct2#punctuations"
+		}
+	],
+	"repository": {
+		"paragraphTags": {
+			"patterns": [
+				{
+					"match": "^(AA|BB|CC|DD|EE|FF)(?![A-Za-z0-9])",
+					"name": "keyword.control"
+				},
+				{
+					"match": "^([A-F][PKH])(?![A-Za-z0-9])",
+					"name": "support.class"
+				},
+				{
+					"match": "^(Z[Z0-3])(?![A-Za-z0-9])",
+					"name": "constant.language"
+				},
+				{
+					"match": "^(S[S0-3])(?![A-Za-z0-9])",
+					"name": "support.constant.font-name"
+				},
+				{
+					"match": "^(XX)(?![A-Za-z0-9])",
+					"name": "constant.regexp"
+				},
+				{
+					"match": "^(PP|TT)(?![A-Za-z0-9])",
+					"name": "entity.name.tag"
+				}
+			]
+		},
+		"styleTags": {
+			"patterns": [
+				{
+					"begin": "(\\[\\[)((?:sm|lg|ps|ng)/)",
+					"end": "(\\]\\])",
+					"contentName": "string.regexp",
+					"beginCaptures": {
+						"1": {
+							"name": "punctuation.character.set.begin.regexp"
+						},
+						"2": {
+							"name": "entity.name.tag"
+						}
+					},
+					"endCaptures": {
+						"1": {
+							"name": "punctuation.character.set.end.regexp"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#inlineContent"
+						}
+					]
+				},
+				{
+					"begin": "(\\[)((?:sm|lg|ps|ng)/)",
+					"end": "(\\])",
+					"contentName": "string.regexp",
+					"beginCaptures": {
+						"1": {
+							"name": "punctuation.character.set.begin.regexp"
+						},
+						"2": {
+							"name": "entity.name.tag"
+						}
+					},
+					"endCaptures": {
+						"1": {
+							"name": "punctuation.character.set.end.regexp"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#inlineContent"
+						}
+					]
+				}
+			]
+		},
+		"annotationTags": {
+			"patterns": [
+				{
+					"match": "\\{n\\}",
+					"name": "constant.character.escape"
+				},
+				{
+					"begin": "(\\{)",
+					"end": "(\\})",
+					"beginCaptures": {
+						"1": {
+							"name": "punctuation.character.set.begin.regexp"
+						}
+					},
+					"endCaptures": {
+						"1": {
+							"name": "punctuation.character.set.end.regexp"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#inlineContent"
+						},
+						{
+							"match": "([=@;:])",
+							"name": "keyword.operator"
+						},
+						{
+							"match": "[^=@;:\\{\\}\\[\\]<>]+",
+							"name": "string.regexp"
+						}
+					]
+				}
+			]
+		},
+		"inlineContent": {
+			"patterns": [
+				{
+					"include": "#styleTags"
+				},
+				{
+					"include": "#annotationTags"
+				},
+				{
+					"include": "#pictureContent"
+				}
+			]
+		},
+		"pictureContent": {
+			"patterns": [
+				{
+					"match": "(<)([^<>,\\s]+\\.(?i:png|jpe?g|gif|bmp|tiff?))(?:(,)([^<>]*))?(>)",
+					"captures": {
+						"1": {
+							"name": "punctuation.character.set.begin.regexp"
+						},
+						"2": {
+							"name": "entity.name.tag"
+						},
+						"3": {
+							"name": "keyword.operator"
+						},
+						"4": {
+							"name": "string.regexp"
+						},
+						"5": {
+							"name": "punctuation.character.set.end.regexp"
+						}
+					}
+				}
+			]
+		},
+		"tableDelimiter": {
+			"patterns": [
+				{
+					"match": "#",
+					"name": "punctuation.definition.character-class.regexp"
+				}
+			]
+		}
+	},
+	"scopeName": "text.mct1"
+}
