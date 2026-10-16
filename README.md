@@ -55,3 +55,13 @@
 
 - custom color theme 적용 삭제
 - text mate scope 이름 변경
+
+### 0.0.5
+
+- 구(舊) 문법(MediclassicsText.v1, `mct1`) 구문 강조 추가: 확장자 자동 연결 없이 언어 모드에서 선택
+
+---
+
+## 부록: 구(舊) 문법 (MediclassicsText.v1)
+
+예전 마크업 문법도 강조할 수 있습니다. 확장자는 연결되어 있지 않으므로, `.txt` 등의 파일을 연 뒤 VS Code 하단 상태 표시줄의 언어 모드를 클릭하고 `MediclassicsText.v1 (mct1)`을 선택하세요. 예시는 `syntax_test_file_mct1.txt`를 참고하세요.

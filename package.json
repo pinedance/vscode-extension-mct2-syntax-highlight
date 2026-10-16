@@ -2,7 +2,7 @@
   "name": "vscode-extension-mct2-syntax-highlight",
   "displayName": "MediClassicsText.v2(mct2) Syntax Highlight",
   "description": "",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -22,6 +22,14 @@
           ".MCT2"
         ],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "mct1",
+        "aliases": [
+          "MediclassicsText.v1",
+          "mct1"
+        ],
+        "configuration": "./language-configuration-mct1.json"
       }
     ],
     "grammars": [
@@ -29,6 +37,11 @@
         "language": "mct2",
         "scopeName": "text.mct2",
         "path": "./syntaxes/mct2.tmLanguage.json"
+      },
+      {
+        "language": "mct1",
+        "scopeName": "text.mct1",
+        "path": "./syntaxes/mct1.tmLanguage.json"
       }
     ],
     "configurationDefaults": {
